@@ -165,8 +165,8 @@
     <header>
       <div class="logo-badge">⚖️ OJ-JUD</div>
       <h1>Política de Privacidade</h1>
-      <p class="subtitle">Extensão de apoio e automação às rotinas do Oficial de Justiça</p>
-      <p class="last-updated">Última atualização: 28 de setembro de 2026</p>
+      <p class="subtitle">Extensão e aplicativo móvel (OJ-JUD APP) de apoio às rotinas do Oficial de Justiça</p>
+      <p class="last-updated">Última atualização: 17 de novembro de 2026</p>
     </header>
 
     <main>
@@ -205,18 +205,29 @@
       </section>
 
       <section class="card">
-        <h2>4. Segurança da Informação</h2>
-        <p>Todas as comunicações com serviços externos utilizam protocolos criptografados (HTTPS/TLS). A extensão não possui nenhum servidor intermediário próprio monitorando as requisições dos usuários.</p>
+        <h2>4. Aplicativo Android (OJ-JUD APP), Google Drive e Localização</h2>
+        <p>O aplicativo móvel complementar <strong>OJ-JUD APP</strong> utiliza exclusivamente a conta do usuário para sincronização pessoal em campo:</p>
+        <ul>
+          <li><strong>Autenticação (Supabase):</strong> O login utiliza a mesma conta cadastrada na extensão, apenas para validar o acesso do usuário.</li>
+          <li><strong>Uso da API do Google Drive:</strong> Mediante autorização explícita do usuário, o aplicativo acessa exclusivamente a pasta do Google Drive selecionada por ele para ler o arquivo de mandados exportado pela extensão (<code>sincroniza_ext_para_app.json</code>) e gravar os registros de diligências (<code>sincroniza_app_para_ext.json</code>). Nenhum dado de mandado, processo, endereço ou diligência é enviado para servidores de terceiros ou do desenvolvedor.</li>
+          <li><strong>Conformidade com os Serviços de API do Google:</strong> O uso e a transferência de informações recebidas das APIs do Google pelo OJ-JUD APP seguem estritamente a <em>Google API Services User Data Policy</em>, incluindo os requisitos de Uso Limitado (<em>Limited Use</em>).</li>
+          <li><strong>Localização (GPS):</strong> A permissão de localização do dispositivo é opcional e utilizada somente quando o usuário toca no botão <em>"Localização GPS"</em> para preencher o endereço e/ou coordenadas da diligência em campo.</li>
+        </ul>
       </section>
 
       <section class="card">
-        <h2>5. Alterações nesta Política</h2>
+        <h2>5. Segurança da Informação</h2>
+        <p>Todas as comunicações com serviços externos utilizam protocolos criptografados (HTTPS/TLS). Nem a extensão nem o aplicativo possuem servidor intermediário próprio armazenando dados processuais ou arquivos dos usuários.</p>
+      </section>
+
+      <section class="card">
+        <h2>6. Alterações nesta Política</h2>
         <p>Esta Política de Privacidade poderá ser atualizada periodicamente para refletir melhorias técnicas ou adequações legais. Qualquer alteração entrará em vigor no momento da sua publicação nesta página.</p>
       </section>
 
       <section class="card">
-        <h2>6. Contato</h2>
-        <p>Para dúvidas, sugestões ou solicitações relativas à privacidade da extensão, entre em contato diretamente pelo repositório oficial do projeto no GitHub:</p>
+        <h2>7. Contato</h2>
+        <p>Para dúvidas, sugestões ou solicitações relativas à privacidade, entre em contato pelo e-mail de suporte ou pelo repositório oficial do projeto no GitHub:</p>
         <p><a href="https://github.com/douglasoliv82/extensao-oj-jud" style="color: #60a5fa; text-decoration: underline;">https://github.com/douglasoliv82/extensao-oj-jud</a></p>
       </section>
     </main>
